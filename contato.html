@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Solicite um Orçamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="github.html">GitHub</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+         </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulário de orçamento</h2>
+            <p>Preencha o formulário abaixo para solicitar um orçamento:</p>
+            <form action="#" method="get">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <fieldset>
+                    <legend>Tipo de cliente:</legend>
+                    <label>
+                        <input type="radio" name="cliente" value="pessoa-física" required>
+                        Pessoa Física
+                    </label>
+                    <label>
+                        <input type="radio" name="cliente" value="pessoa-jurídica" required>
+                        Pessoa Jurídica
+                    </label>
+                </fieldset>
+                <label for="horario">
+                    Melhor horário para contato:
+                </label>
+                <input type="time" id="horario" name="horario">
+
+                <label for="serviço">
+                    Qual seriço deseja contratar?
+                </label>
+                <select id="serviço" name="serviço" required>
+                    <option value="">
+                        Selecione uma opção
+                    </option>
+
+                    <option value="estatico-1-2">
+                        Site Estático de 1 a 2 páginas
+                    </option>
+
+                    <option value="estatico-3-5">
+                        Site Estático de 3 a 5 páginas
+                    </option>
+
+                    <option value="estatico-maior">
+                        Site Estático de 6 ou mais páginas
+                    </option>
+                    
+                    <option value="dinamico">
+                        Site Dinâmico
+                    </option>
+
+                    <option value="avancado">
+                        Site Avançado
+                    </option>
+                    </select>
+                    <label for="descricao">
+                        Descreva o projeto que deseja desenvolver:
+                    </label>
+                    <textarea id="descricao" name="descricao" rows="6" required>
+
+                    </textarea>
+
+                    <label>
+                        <input type="checkbox" name="privacidade" required>
+                        Eu li e concordo com a política de privacidade.
+                    </label>
+
+                    <button type="submit">
+                        Enviar Solicitação
+                    </button>
+
+            </form>
+
+            <p class="aviso">
+                Formulário demonstrativo, não envia dados para nenhum servidor. Para enviar uma solicitação de orçamento, entre em contato pelo e-mail: <a href="mailto:matheusdccordeiro@gmail.com">matheusdccordeiro@gmail.com</a>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Outras formas de contato</h2>
+            <p>Você também pode entrar em contato através do telefone (27) 99574-7417</p>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Minha Landing Page | Contato</p>
+    </footer>
+    
+</body>
+</html>
